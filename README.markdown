@@ -4,4 +4,4 @@
 
 [C程序设计语言]: http://book.douban.com/subject/1139336/
 
-[foo]: http://example.com/  "Optional Title Here"
+test
