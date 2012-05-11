@@ -14,7 +14,6 @@ int main()
 	lastc = getchar();			// get the first character
 	while ((c = getchar()) != EOF)
 	{
-		// 判断/ * * /类型的注释
 			if (flag1 == 0 && (c == '"' || c == '\''))
 			{
 				if (lastc != '\\')
