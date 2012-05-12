@@ -20,10 +20,11 @@ int main()
 		"abc123",
 		"123",
 		"12",
-		"1"
+		"1",
 	};
+	int n = sizeof test / sizeof test[0];
 	int i;
-	for (i = 0; i < 9; i++)
+	for (i = 0; i < n; i++)
 		printf("%d\n", htoi(test[i]));
 
 	
