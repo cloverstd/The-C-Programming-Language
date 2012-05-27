@@ -1,7 +1,11 @@
+// gcc -o 4-3 4-3.c -lm
+// need to link the math library
 #include<stdio.h>
 #include<stdlib.h>		// for atof()
 #include<ctype.h>
 #include<string.h>
+#include<math.h>
+
 
 #define MAXOP	100
 #define NUMBER	'0'
@@ -50,7 +54,8 @@ int main()
 				break;
 			case '%':
 				if ((op2 = pop()) != 0.0)
-					push((int)pop() % (int)op2 );
+					//push((int)pop() % (int)op2 );
+					push(fmod(pop(), op2));
 				else
 					printf("error: zero divisor\n");
 				break;
