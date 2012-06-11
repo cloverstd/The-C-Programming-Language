@@ -50,6 +50,11 @@ int main(int argc, char *argv[])
         is_reverse = TRUE;
         numeric = TRUE;
     }
+    else if (argc > 1)
+    {
+        printf("error: invalid switch\n");
+        return -1;
+    }
 
     if ((nlines = readlines(lineptr, linestor,  MAXLINES)) >= 0)
     {
