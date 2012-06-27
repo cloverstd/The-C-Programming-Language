@@ -80,17 +80,6 @@ int main(int argc, char *argv[])
         }
     }
 
-    printf("\n-------------------\n");
-    if (numeric == TRUE)
-        printf("-n\n");
-    if (is_flodcase == TRUE)
-        printf("-f\n");
-    if (is_reverse == TRUE)
-        printf("-r\n");
-    if (is_directory == TRUE)
-        printf("-d\n");
-    printf("\n-------------------\n");
-
     if ((nlines = readlines(lineptr, linestor,  MAXLINES)) >= 0)
     {
         printf("\n\n-----------------\nI am Dividing lines\n-----------------\n");
