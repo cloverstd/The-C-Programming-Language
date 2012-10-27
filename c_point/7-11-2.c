@@ -5,7 +5,7 @@ int gcd(int m, int n);
 
 int main(void)
 {
-    printf("%d\n", gcd(16, 12));
+    printf("%d\n", gcd(12, 16));
     return EXIT_SUCCESS;
 }
 
