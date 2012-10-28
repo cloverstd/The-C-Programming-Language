@@ -6,7 +6,7 @@ int max_list(int n, ...);
 
 int main(void)
 {
-    printf("%d\n", max_list(5, 4, 5, 6, -1));
+    printf("%d\n", max_list(5, 4, 5, 6, 8, 100, 10, -1));
     return EXIT_SUCCESS;
 }
 
@@ -20,7 +20,7 @@ int max_list(int n, ...)
 
     max = va_arg(var_arg, int); // get the first integer
     integer = max;
-    for (ii = 0; ii < n; ii++)
+    while (1)
     {
         integer = va_arg(var_arg, int);
         if (integer < 0)
